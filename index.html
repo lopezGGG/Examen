@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Examen - Test de Opción Múltiple</title>
+    <title>Examen Scrum - Test de Certificación</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -101,110 +100,130 @@
     </style>
 </head>
 <body>
-    <h1>Examen - Test de Opción Múltiple</h1>
+    <h1>Examen Scrum - Test de Certificación</h1>
     
     <div class="question" id="question1">
-        <h3>Pregunta 1: ¿Cuál es la capital de Francia? <span class="question-type">(Una respuesta)</span></h3>
+        <h3>Pregunta 1: Who starts the Daily Scrum? <span class="question-type">(Una respuesta)</span></h3>
         <div class="options">
             <div class="option">
                 <input type="radio" id="q1a" name="question1" value="a">
-                <label for="q1a">Madrid</label>
+                <label for="q1a">The person coming in last. This encourages people to be on time and helps to stay within the time-box.</label>
             </div>
             <div class="option">
                 <input type="radio" id="q1b" name="question1" value="b">
-                <label for="q1b">París</label>
+                <label for="q1b">Whoever the Development Team decides should start.</label>
             </div>
             <div class="option">
                 <input type="radio" id="q1c" name="question1" value="c">
-                <label for="q1c">Londres</label>
+                <label for="q1c">The person who has the token.</label>
             </div>
             <div class="option">
                 <input type="radio" id="q1d" name="question1" value="d">
-                <label for="q1d">Roma</label>
+                <label for="q1d">The Scrum Master. This ensures that the Development Team has the meeting and stays within the time-box.</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="q1e" name="question1" value="e">
+                <label for="q1e">The person who last broke the build.</label>
             </div>
         </div>
-        <button class="check-btn" onclick="checkSingleAnswer('question1', ['b'], 'París es la capital de Francia.')">Comprobar Respuesta</button>
+        <button class="check-btn" onclick="checkSingleAnswer('question1', ['b'], 'Correct answer is B: Whoever the Development Team decides should start.')">Comprobar Respuesta</button>
         <div id="result1" class="result" style="display: none;"></div>
     </div>
     
     <div class="question" id="question2">
-        <h3>Pregunta 2: ¿Cuáles son lenguajes de programación utilizados para desarrollo web? <span class="question-type">(Múltiples respuestas)</span></h3>
+        <h3>Pregunta 2: In the middle of the Sprint, the customer decides that there are two new features she wants. The Product Owner could: <span class="question-type">(Choose two - Múltiples respuestas)</span></h3>
         <div class="options">
             <div class="option">
                 <input type="checkbox" id="q2a" name="question2" value="a">
-                <label for="q2a">JavaScript</label>
+                <label for="q2a">Introduce these features at the next Daily Scrum.</label>
             </div>
             <div class="option">
                 <input type="checkbox" id="q2b" name="question2" value="b">
-                <label for="q2b">Python</label>
+                <label for="q2b">Add these features to the Product Backlog.</label>
             </div>
             <div class="option">
                 <input type="checkbox" id="q2c" name="question2" value="c">
-                <label for="q2c">PHP</label>
+                <label for="q2c">Have the Scrum Master add these features to the current Sprint.</label>
             </div>
             <div class="option">
                 <input type="checkbox" id="q2d" name="question2" value="d">
-                <label for="q2d">TypeScript</label>
-            </div>
-            <div class="option">
-                <input type="checkbox" id="q2e" name="question2" value="e">
-                <label for="q2e">COBOL</label>
+                <label for="q2d">Ask the Developers to consider whether they can add these features to the current Sprint without endangering the Sprint Goal.</label>
             </div>
         </div>
-        <button class="check-btn" onclick="checkMultipleAnswer('question2', ['a', 'b', 'c', 'd'], 'JavaScript, Python, PHP y TypeScript son lenguajes utilizados comúnmente en desarrollo web.')">Comprobar Respuesta</button>
+        <button class="check-btn" onclick="checkMultipleAnswer('question2', ['b', 'd'], 'Correct answers are B and D: Add features to Product Backlog and ask Developers if they can add them without endangering the Sprint Goal.')">Comprobar Respuesta</button>
         <div id="result2" class="result" style="display: none;"></div>
     </div>
     
     <div class="question" id="question3">
-        <h3>Pregunta 3: ¿Qué sistemas operativos son desarrollados por Microsoft? <span class="question-type">(Múltiples respuestas)</span></h3>
+        <h3>Pregunta 3: A Product Backlog is: <span class="question-type">(Choose three - Múltiples respuestas)</span></h3>
         <div class="options">
             <div class="option">
                 <input type="checkbox" id="q3a" name="question3" value="a">
-                <label for="q3a">Windows</label>
+                <label for="q3a">Ordered based on priority, value, dependencies, and risk.</label>
             </div>
             <div class="option">
                 <input type="checkbox" id="q3b" name="question3" value="b">
-                <label for="q3b">Windows Server</label>
+                <label for="q3b">Only visible to the Product Owner and stakeholders.</label>
             </div>
             <div class="option">
                 <input type="checkbox" id="q3c" name="question3" value="c">
-                <label for="q3c">macOS</label>
+                <label for="q3c">An inventory of things to be done for the Product.</label>
             </div>
             <div class="option">
                 <input type="checkbox" id="q3d" name="question3" value="d">
-                <label for="q3d">Xbox OS</label>
+                <label for="q3d">An exhaustive list of upfront approved requirements to be implemented.</label>
             </div>
             <div class="option">
                 <input type="checkbox" id="q3e" name="question3" value="e">
-                <label for="q3e">Linux</label>
+                <label for="q3e">Managed by the Product Owner.</label>
             </div>
         </div>
-        <button class="check-btn" onclick="checkMultipleAnswer('question3', ['a', 'b', 'd'], 'Windows, Windows Server y Xbox OS son sistemas operativos desarrollados por Microsoft.')">Comprobar Respuesta</button>
+        <button class="check-btn" onclick="checkMultipleAnswer('question3', ['a', 'c', 'e'], 'Correct answers are A, C, and E: A Product Backlog is ordered by priority/value/dependencies/risk, is an inventory of things to be done, and is managed by the Product Owner.')">Comprobar Respuesta</button>
         <div id="result3" class="result" style="display: none;"></div>
     </div>
 
     <div class="question" id="question4">
-        <h3>Pregunta 4: ¿Cuál es la capital de España? <span class="question-type">(Una respuesta)</span></h3>
+        <h3>Pregunta 4: When can a Development Team cancel a Sprint? <span class="question-type">(Una respuesta)</span></h3>
         <div class="options">
             <div class="option">
                 <input type="radio" id="q4a" name="question4" value="a">
-                <label for="q4a">Barcelona</label>
+                <label for="q4a">When a technical dependency cannot be resolved.</label>
             </div>
             <div class="option">
                 <input type="radio" id="q4b" name="question4" value="b">
-                <label for="q4b">Madrid</label>
+                <label for="q4b">When the selected Product Backlog items for the Sprint become unachievable.</label>
             </div>
             <div class="option">
                 <input type="radio" id="q4c" name="question4" value="c">
-                <label for="q4c">Valencia</label>
+                <label for="q4c">When the Product Owner is absent too often.</label>
             </div>
             <div class="option">
                 <input type="radio" id="q4d" name="question4" value="d">
-                <label for="q4d">Sevilla</label>
+                <label for="q4d">It cannot. Only Product Owners can cancel Sprints.</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="q4e" name="question4" value="e">
+                <label for="q4e">When functional expectations are not well understood.</label>
             </div>
         </div>
-        <button class="check-btn" onclick="checkSingleAnswer('question4', ['b'], 'Madrid es la capital de España.')">Comprobar Respuesta</button>
+        <button class="check-btn" onclick="checkSingleAnswer('question4', ['d'], 'Correct answer is D: A Development Team cannot cancel a Sprint. Only Product Owners can cancel Sprints.')">Comprobar Respuesta</button>
         <div id="result4" class="result" style="display: none;"></div>
+    </div>
+
+    <div class="question" id="question5">
+        <h3>Pregunta 5: True or False: An Increment must be released to customers or users at the end of each Sprint. <span class="question-type">(Una respuesta)</span></h3>
+        <div class="options">
+            <div class="option">
+                <input type="radio" id="q5a" name="question5" value="a">
+                <label for="q5a">True</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="q5b" name="question5" value="b">
+                <label for="q5b">False</label>
+            </div>
+        </div>
+        <button class="check-btn" onclick="checkSingleAnswer('question5', ['b'], 'Correct answer is B: False. An Increment does not have to be released at the end of each Sprint, but it must be potentially releasable.')">Comprobar Respuesta</button>
+        <div id="result5" class="result" style="display: none;"></div>
     </div>
 
     <script>
@@ -293,7 +312,7 @@
         // Función para reiniciar el examen
         function resetExam() {
             // Reiniciar todas las preguntas
-            const questions = ['question1', 'question2', 'question3', 'question4'];
+            const questions = ['question1', 'question2', 'question3', 'question4', 'question5'];
             
             questions.forEach((questionName, index) => {
                 // Limpiar selecciones
